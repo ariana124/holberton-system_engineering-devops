@@ -1,2 +1,2 @@
 #!/bin/bash
-head iacta | grep -c 3
+head -n 3 iacta | tail -n 3

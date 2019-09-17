@@ -1,2 +1,2 @@
-#!/bin/bash
-find -name *.js -prune rm
+B#!/bin/bash
+find -name "*.js" rm

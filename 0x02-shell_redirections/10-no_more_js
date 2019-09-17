@@ -1,2 +1,2 @@
-B#!/bin/bash
-find -name "*.js" rm
+BB#!/bin/bash
+find -name "*.js" -typef -d

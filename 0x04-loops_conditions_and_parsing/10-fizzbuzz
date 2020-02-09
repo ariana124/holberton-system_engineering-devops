@@ -4,7 +4,7 @@
 # 	   displays Fizz when the number is a multiple of 3
 #	   displays Buzz when the number is a multiple of 5
 
-for ((i = 1; i < 100; i++))
+for ((i = 1; i <= 100; i++))
 do
 	if [ $((i % 3)) -eq 0 ] && [ $((i % 5)) -eq 0 ]
 	then echo "FizzBuzz"

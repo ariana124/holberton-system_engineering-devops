@@ -1,6 +1,6 @@
 ## System Engineering and Devops
 
-> This repository contains the projects under System Engineering and Devops. The projects contained here are primarily focused on using and  getting familiar with the shell.
+> This repository contains the projects under System Engineering and Devops. The projects contained here are primarily written in Bash, and are focused on using and getting familiar with the shell.
 
 | Project | Description |
 |--|--|

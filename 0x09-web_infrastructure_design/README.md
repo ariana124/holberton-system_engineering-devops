@@ -5,7 +5,7 @@ The goal of this project was to draw diagrams of a web stack.
 ### Simple Web Stack
 Design a web server infrastructure that hosts the website that is reachable via `www.foobar.com`.
 
-![0-simple_web_stack](https://imgur.com/gallery/GCvjYrQ)
+[0-simple_web_stack](https://imgur.com/gallery/GCvjYrQ)
 
 Requirements:
   > - 1 server
@@ -19,7 +19,7 @@ Requirements:
 ### Distributed Web Infrastructure
 Design a three server web infrastructure that hosts the website `www.foobar.com`.
 
-![1-distributed_web_infrastructure](https://imgur.com/gallery/WwT5xz8)
+[1-distributed_web_infrastructure](https://imgur.com/gallery/WwT5xz8)
 
 Requirements:
   > - 2 servers
@@ -32,7 +32,7 @@ Requirements:
 ### Secured and Monitored Web Infrastructure
 Design a three server web infrastructure that hosts the website `www.foobar.com`, it must be secured, serve encrypted traffic, and be monitored.
 
-![2-secured_and_monitored_web_infrastructure](https://imgur.com/gallery/fAjF5gZ)
+[2-secured_and_monitored_web_infrastructure](https://imgur.com/gallery/fAjF5gZ)
 
 Requirements:
   > - 3 firewalls

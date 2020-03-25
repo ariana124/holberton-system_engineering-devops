@@ -1,1 +1,7 @@
+#!/usr/bin/env bash
+# creates an RSA key pair with the following requirements:
+#   - private key name: holberton
+#   - number of bits: 4096
+#   - passphrase: betty
 
+ssh-keygen -f holberton -b 4096 -N betty

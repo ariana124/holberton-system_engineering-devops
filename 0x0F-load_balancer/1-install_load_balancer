@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# bash script to download the load balancer with the round robin algo
+
+sudo apt-get -y update
+sudo apt-get -y install haproxy=1.8\*
+
+echo "
+frontend http
+	 bind *:80
+	 mode http
+	 default_backend web-backend
+
+backend web-backend
+	balance roundrobin
+	server 857-web-01 35.196.72.218 check
+	server 857-web-02 18.207.121.172 check" >> /etc/haproxy/haproxy.cfg
+
+sudo service haproxy restart

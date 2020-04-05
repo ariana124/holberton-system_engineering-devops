@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# script that debugs a container to get apache running again
+
+sudo service apache 2

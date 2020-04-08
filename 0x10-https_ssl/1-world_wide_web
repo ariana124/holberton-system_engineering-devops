@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# displays domain information: subdomain, record type, and ip address:
+#     1 = domain & 2 = subdomain
+# shellcheck disable=SC2086
+
+get_domain()
+{
+    ip=$(dig $2.$1 | awk '/ANSWER SECTION:/ {getline; print $5}')
+    record=$(dig $2.$1 | awk '/ANSWER SECTION:/ {getline; print $4}')
+}
+
+for subdomain in "www" "lb-01" "web-01" "web-02"
+do
+    if [ -z "$2" ] || [ "$2" == "$subdomain" ] ;
+    then
+    get_domain "$1" "$subdomain"
+    echo "The subdomain $subdomain is a $record record and points to $ip"
+    fi
+done

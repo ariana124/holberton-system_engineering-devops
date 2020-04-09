@@ -1,0 +1,8 @@
+!/usr/bin/env bash
+# changes user from root to nginx
+
+pkill -f apache2
+chown nginx:nginx /etc/nginx/
+chmod 777 /etc/nginx/nginx.conf
+sed -i "s/80/8080/" /etc/nginx/sites-available/default
+sudo -u nginx service nginx restart

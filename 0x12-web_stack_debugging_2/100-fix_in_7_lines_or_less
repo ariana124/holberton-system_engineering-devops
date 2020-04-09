@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # changes user from root to nginx
-
 pkill -f apache2
 chown nginx:nginx /etc/nginx/
 chmod 777 /etc/nginx/nginx.conf

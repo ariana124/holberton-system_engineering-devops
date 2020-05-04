@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-script that uses an API to return information about an employee's TODO list progress
+script that uses an API to return information about an employee's
+TODO list progress
 """
 import requests
 from sys import argv
@@ -22,7 +23,8 @@ if __name__ == "__main__":
     total_tasks = len(tasks)
     name = employee.get("name")
 
-    print("Employee {} is done with tasks({}/{}):".format(name, completed_tasks,
+    print("Employee {} is done with tasks({}/{}):".format(name,
+                                                          completed_tasks,
                                                           total_tasks))
     for task in tasks_completed:
         print("\t {}".format(task.get("title")))

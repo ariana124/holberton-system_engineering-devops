@@ -18,11 +18,9 @@ if __name__ == "__main__":
     filename = employee_id + ".csv"
 
     with open(filename, "w") as csv_file:
-        writer = csv.writer(csv_file, delimiter=',',
-                            quotechar='"',
-                            quoting=csv.QUOTE_ALL)
         for task in tasks:
-            writer.writerow((task.get("userId"),
-                             name,
-                             task.get("completed"),
-                             task.get("title")))
+            csv_file.write('"{}","{}","{}","{}"\n'.format(
+                          task.get("userId"),
+                          name,
+                          task.get("completed"),
+                          task.get("title")))

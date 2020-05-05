@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-script that exports data in CSV format
+script that exports data in JSON format
 """
 import csv
 import json

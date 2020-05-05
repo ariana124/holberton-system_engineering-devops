@@ -14,13 +14,15 @@ if __name__ == "__main__":
     employee = requests.get(url + "users/" + employee_id).json()
     tasks = requests.get(url + "todos?userId=" + employee_id).json()
 
-    name = employee.get("name")
+    username = employee.get("username")
     filename = employee_id + ".csv"
 
     with open(filename, "w") as csv_file:
+        writer = csv.writer(csv_file, delimiter=',',
+                            quotechar='"',
+                            quoting=csv.QUOTE_ALL)
         for task in tasks:
-            csv_file.write('"{}","{}","{}","{}"\n'.format(
-                          task.get("userId"),
-                          name,
-                          task.get("completed"),
-                          task.get("title")))
+            writer.writerow((task.get("userId"),
+                             username,
+                             task.get("completed"),
+                             task.get("title")))

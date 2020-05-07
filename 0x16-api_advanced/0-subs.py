@@ -4,7 +4,6 @@ Query that uses the Reddit API to get the number of subscribers for a
 given subreddit
 """
 import requests
-from sys import argv
 
 
 def number_of_subscribers(subreddit):

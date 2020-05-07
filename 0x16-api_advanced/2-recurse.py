@@ -9,7 +9,7 @@ import requests
 def recurse(subreddit, hot_list=[], after=None):
     url = "https://www.reddit.com/r/" + subreddit
     headers = {"User-Agent": "Mozilla 5.0"}
-    new_url = url + "/hot.json?limit=100&after=" + after
+    new_url = url + "/hot.json?limit=100&after=" + str(after)
 
     response = requests.get(new_url, headers=headers)
 
